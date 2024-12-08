@@ -71,7 +71,7 @@ export default function Atom({width, height}: {width: number, height: number}) {
 
     return (
         <>
-            <div className="w-full absolute left-0 right-0" style={{top: -5}}>
+            <div className="w-full absolute left-0 right-0" style={{top: -50}}>
                 <canvas className="m-auto" ref={canvasRef} width={width} height={height}></canvas>
             </div>
         </>
