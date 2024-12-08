@@ -3,27 +3,14 @@
 import React, {useRef, useEffect} from "react"
 import { Electron } from "./electron"
 
-const elecs: Electron[] = []
-const radius: number[] = [150, 250, 350, 450]
+import styles from "./index.module.css"
+
+const elecs: Electron[] = [];
+const radius: number[] = [150, 250, 350, 450];
 
 export default function Atom({width, height}: {width: number, height: number}) {
     const centerX = width / 2;
     const centerY = height / 2;
-
-    elecs.push(new Electron(centerX, centerY, radius[0], 0.001, 0));
-    elecs.push(new Electron(centerX, centerY, radius[0], 0.001, Math.PI));
-
-    for (let i = 0; i < 9; i++) {
-        elecs.push(new Electron(centerX, centerY, radius[1], 0.0005, Math.PI * 2 * i / 9));
-    }
-
-    for (let i = 0; i < 18; i++) {
-        elecs.push(new Electron(centerX, centerY, radius[2], 0.0008, Math.PI * 2 * i / 18));
-    }
-
-    for (let i = 0; i < 3; i++) {
-        elecs.push(new Electron(centerX, centerY, radius[3], 0.0006, Math.PI * 2 * i / 3));
-    }
 
     const canvasRef = useRef(null)
 
@@ -49,6 +36,7 @@ export default function Atom({width, height}: {width: number, height: number}) {
         let current = Date.now();
 
         const canvas = canvasRef.current;
+        // @ts-expect-error effect makes canvas guaranteed to be assigned
         const context = canvas.getContext('2d');
         let animationFrameId: number;
 
@@ -61,6 +49,28 @@ export default function Atom({width, height}: {width: number, height: number}) {
             draw(context, delta);
             animationFrameId = window.requestAnimationFrame(render);
         }
+
+        const makeElectrons = () => {
+            elecs.length = 0;
+
+            elecs.push(new Electron(centerX, centerY, radius[0], 0.0005, 0));
+            elecs.push(new Electron(centerX, centerY, radius[0], 0.0005, Math.PI));
+
+            for (let i = 0; i < 9; i++) {
+                elecs.push(new Electron(centerX, centerY, radius[1], 0.00025, Math.PI * 2 * i / 9));
+            }
+
+            for (let i = 0; i < 18; i++) {
+                elecs.push(new Electron(centerX, centerY, radius[2], 0.0004, Math.PI * 2 * i / 18));
+            }
+
+            for (let i = 0; i < 3; i++) {
+                elecs.push(new Electron(centerX, centerY, radius[3], 0.0003, Math.PI * 2 * i / 3));
+            }
+        }
+
+        makeElectrons();
+
         render()
 
         return () => {
@@ -72,7 +82,7 @@ export default function Atom({width, height}: {width: number, height: number}) {
     return (
         <>
             <div className="w-full absolute left-0 right-0 overflow-hidden" style={{top: -20}}>
-                <canvas className="m-auto" ref={canvasRef} width={width} height={height}></canvas>
+                <canvas className={`m-auto ${styles.atom}`} ref={canvasRef} width={width} height={height}></canvas>
             </div>
         </>
     );

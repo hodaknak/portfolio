@@ -1,11 +1,13 @@
 import React from "react"
 import Image from "next/image";
 
+import styles from "./index.module.css"
+
 export default function Cards() {
     return (
         <>
             <div className="w-full flex flex-wrap gap-4 items-center justify-center flex-col sm:flex-row">
-                <div className="card shadow hover:bg-gray-700">
+                <div className={`${styles.card} shadow hover:bg-gray-700`}>
                     <div className="block p-6">
                         <p className="mb-2 text-2xl font-bold tracking-tight text-gray-200">Education</p>
                         <div className="flex flex-row items-start gap-6">
@@ -28,7 +30,7 @@ export default function Cards() {
                         </div>
                     </div>
                 </div>
-                <div className="card shadow hover:bg-gray-700">
+                <div className={`${styles.card} shadow hover:bg-gray-700`}>
                     <div className="block p-6">
                         <p className="mb-2 text-2xl font-bold tracking-tight text-gray-200">About Me</p>
                         <div className="font-normal text-gray-400">
@@ -46,7 +48,7 @@ export default function Cards() {
                         </div>
                     </div>
                 </div>
-                <div className="card shadow hover:bg-gray-700">
+                <div className={`${styles.card} shadow hover:bg-gray-700`}>
                     <div className="block p-6">
                         <p className="mb-2 text-2xl font-bold tracking-tight text-gray-200 ">Connect With Me</p>
                         <div className="flex flex-row items-start gap-6">
