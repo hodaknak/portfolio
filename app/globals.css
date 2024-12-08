@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #23232d;
+  --foreground: #171717;
+}
+
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Helvetica", serif;
+}
+
+.link-underline {
+  border-bottom-width: 0;
+  background-image: linear-gradient(to right, transparent, transparent), linear-gradient(to right, #2e34ff, #a1a1ff);
+  background-size: 0 5px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size .2s ease-in-out;
+}
+
+.link-underline:hover {
+  background-size: 100% 5px;
+  background-position: 0 100%
+}
+
+.card {
+  transition: all 1s ease;
+  width: 28rem;
+  height: 18rem;
+  border-radius: 0.5rem;
+  background-color: rgba(71, 79, 105, 0.9);
+  /*border-color: rgb(167 243 208);*/
+  border-width: 2px;
+  backdrop-filter: blur(2px);
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card:active {
+
+}
