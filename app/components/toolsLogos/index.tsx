@@ -5,7 +5,7 @@ import Image from "next/image";
 
 import styles from "./index.module.css"
 
-const tools = ["Unreal Engine 5", "Unity", "Tensorflow", "Next.js", "Node.js", "P5.js", "Github", "Gitkraken", "Socket.io", "SQLite", "Overwatch", "Openframeworks", "C++", "JavaScript", "Python", "C#"];
+const tools = ["Unreal Engine 5", "Unity", "Tensorflow", "Next.js", "Node.js", "P5.js", "Github", "Gitkraken", "Socket.io", "SQLite", "Visual Studio Code", "Openframeworks", "C++", "JavaScript", "Python", "C#"];
 
 export default function Logos() {
     const [active, setActive] = useState(0);
@@ -49,7 +49,7 @@ export default function Logos() {
                     <Image src="/tools/gitkraken.svg" width="50" height="50" alt="" className={`${styles.logo}`} style={active == 7 ? {transform: "scale(1.5)"} : {}}/>
                     <Image src="/tools/socketio.svg" width="50" height="50" alt="" className={`${styles.logo}`} style={active == 8 ? {transform: "scale(1.5)"} : {}}/>
                     <Image src="/tools/sqlite.svg" width="50" height="50" alt="" className={`${styles.logo}`} style={active == 9 ? {transform: "scale(1.5)"} : {}}/>
-                    <Image src="/tools/overwatch.svg" width="50" height="50" alt="" className={`${styles.logo}`} style={active == 10 ? {transform: "scale(1.5)"} : {}}/>
+                    <Image src="/tools/vscode.svg" width="50" height="50" alt="" className={`${styles.logo}`} style={active == 10 ? {transform: "scale(1.5)"} : {}}/>
                     <Image src="/tools/openframeworks.svg" width="50" height="50" alt="" className={`${styles.logo}`} style={active == 11 ? {transform: "scale(1.5)"} : {}}/>
                     <Image src="/tools/cpp.svg" width="50" height="50" alt="" className={`${styles.logo}`} style={active == 12 ? {transform: "scale(1.5)"} : {}}/>
                     <Image src="/tools/javascript.svg" width="50" height="50" alt="" className={`${styles.logo}`} style={active == 13 ? {transform: "scale(1.5)"} : {}}/>

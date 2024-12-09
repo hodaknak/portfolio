@@ -3,6 +3,7 @@ import Image from "next/image";
 import Cards from "./components/cards"
 import Logos from "./components/toolsLogos"
 import Atom from "./components/atom"
+import Experiences from "./components/experiences"
 
 export default function Home() {
 
@@ -15,7 +16,7 @@ export default function Home() {
           </p>
         </div>
 
-        <Atom width={1000} height={1000} />
+        <Atom width={1000} height={1000}/>
 
         <Cards/>
 
@@ -26,8 +27,16 @@ export default function Home() {
         </div>
 
         <Logos/>
+
+        <div className="w-full text-center mt-16">
+          <p className="text-4xl text-gray-400">
+            Experience
+          </p>
+        </div>
+
+        <Experiences/>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
+      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center text-gray-400">
         <a
             className="flex items-center gap-2 hover:underline hover:underline-offset-4"
             href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
