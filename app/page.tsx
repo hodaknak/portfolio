@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import Cards from "./components/cards"
 import Logos from "./components/toolsLogos"
 import Atom from "./components/atom"

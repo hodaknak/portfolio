@@ -12,25 +12,7 @@ export default function Atom({width, height}: {width: number, height: number}) {
     const centerX = width / 2;
     const centerY = height / 2;
 
-    const canvasRef = useRef(null)
-
-    const draw = (ctx: CanvasRenderingContext2D, delta: number) => {
-        ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height)
-
-        ctx.beginPath();
-        ctx.arc(centerX, centerY, 20, 0, Math.PI * 2);
-        ctx.fillStyle = "white";
-        ctx.fill();
-
-        for (const elec of elecs) {
-            elec.draw(ctx, delta);
-        }
-
-        circle(centerX, centerY, radius[0], ctx);
-        circle(centerX, centerY, radius[1], ctx);
-        circle(centerX, centerY, radius[2], ctx);
-        circle(centerX, centerY, radius[3], ctx);
-    }
+    const canvasRef = useRef(null);
 
     useEffect(() => {
         let current = Date.now();
@@ -46,7 +28,7 @@ export default function Atom({width, height}: {width: number, height: number}) {
             const delta = newCurrent - current;
             current = newCurrent;
 
-            draw(context, delta);
+            draw(context, delta, centerX, centerY);
             animationFrameId = window.requestAnimationFrame(render);
         }
 
@@ -76,7 +58,7 @@ export default function Atom({width, height}: {width: number, height: number}) {
         return () => {
             window.cancelAnimationFrame(animationFrameId)
         }
-    }, [draw, centerX, centerY])
+    }, [centerX, centerY])
 
 
     return (
@@ -94,4 +76,22 @@ function circle(x: number, y: number, radius: number, ctx: CanvasRenderingContex
     ctx.lineWidth = 1;
     ctx.strokeStyle = "white";
     ctx.stroke();
+}
+
+function draw(ctx: CanvasRenderingContext2D, delta: number, centerX: number, centerY: number) {
+    ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height)
+
+    ctx.beginPath();
+    ctx.arc(centerX, centerY, 20, 0, Math.PI * 2);
+    ctx.fillStyle = "white";
+    ctx.fill();
+
+    for (const elec of elecs) {
+        elec.draw(ctx, delta);
+    }
+
+    circle(centerX, centerY, radius[0], ctx);
+    circle(centerX, centerY, radius[1], ctx);
+    circle(centerX, centerY, radius[2], ctx);
+    circle(centerX, centerY, radius[3], ctx);
 }
