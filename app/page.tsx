@@ -1,8 +1,13 @@
+import Image from "next/image";
+
 import Cards from "./components/cards"
 import Logos from "./components/toolsLogos"
 import Atom from "./components/atom"
 import Experiences from "./components/experiences"
 import Cursor from "./components/cursor"
+import CourseWork from "./components/courseWork"
+
+import React from "react";
 
 export default function Home() {
 
@@ -36,8 +41,22 @@ export default function Home() {
                     </div>
 
                     <Experiences/>
+
+                    <div className="w-full text-center mt-16">
+                        <p className="text-4xl text-gray-400">
+                            Relevant Coursework
+                        </p>
+                    </div>
+                    <div className="m-auto">
+                        <Image src="/education/uci.png" width="60" height="60" alt=""/>
+                        <svg className="mt-2 m-auto blur-[2px]" xmlns="http://www.w3.org/2000/svg" width="50" height="10">
+                            <ellipse fill="rgb(156 163 175)" rx="25" ry="5" cx="25" cy="5"/>
+                        </svg>
+                    </div>
+
+                    <CourseWork/>
                 </main>
-                <footer className="row-start-3 text-gray-500">
+                <footer className="row-start-4 text-gray-500">
                     <p>Built by Hodaka Nakamura with
                         <a className="text-gray-400 hover:text-blue-500" href="https://nextjs.org/"
                            target="_blank"> Next.js</a> and
