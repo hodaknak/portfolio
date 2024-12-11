@@ -33,7 +33,7 @@ export default function Experiences() {
                     <p className="text-2xl">Projects</p>
                     <Card>
                         <p className="text-lg font-bold tracking-tight text-gray-200">Portfolio Website</p>
-                        <p className="mb-2">A portfolio website made with Next.js hosted using GitHub Pages</p>
+                        <p className="mb-2">A portfolio website made with Next.js hosted using Vercel</p>
                         <p className="text-sm text-[#7e8591]">Languages</p>
                         <p className="mb-0.5">HTML, CSS, JavaScript, JSX</p>
                         <p className="text-sm text-[#7e8591]">Tools</p>
