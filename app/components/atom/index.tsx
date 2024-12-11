@@ -76,7 +76,7 @@ export default function Atom({width, height}: {width: number, height: number}) {
         return () => {
             window.cancelAnimationFrame(animationFrameId)
         }
-    }, [draw])
+    }, [draw, centerX, centerY])
 
 
     return (
