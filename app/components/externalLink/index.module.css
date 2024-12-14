@@ -1,0 +1,12 @@
+.externalLink svg {
+    transition: 500ms ease transform;
+}
+
+.externalLink:hover div {
+    color: #3b82f6;
+}
+
+.externalLink:hover svg {
+    transform: translate(3px, -3px);
+    fill: #3b82f6;
+}

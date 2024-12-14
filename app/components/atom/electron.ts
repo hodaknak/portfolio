@@ -26,4 +26,4 @@ class Electron {
     }
 }
 
-export { Electron };
+export {Electron};

@@ -1,5 +1,5 @@
 import React from "react"
-//import styles from "./index.module.css";
+import ExternalLink from "../externalLink";
 
 export default function Experiences() {
     return (
@@ -33,7 +33,7 @@ export default function Experiences() {
                     <p className="text-2xl">Projects</p>
                     <Card>
                         <p className="text-lg font-bold tracking-tight text-gray-200">Portfolio Website</p>
-                        <p className="mb-2">A portfolio website made with Next.js hosted using Vercel</p>
+                        <p className="mb-2">A portfolio website made with Next.js and hosted using Vercel</p>
                         <p className="text-sm text-[#7e8591]">Languages</p>
                         <p className="mb-0.5">HTML, CSS, TypeScript, JSX</p>
                         <p className="text-sm text-[#7e8591]">Tools</p>
@@ -42,14 +42,13 @@ export default function Experiences() {
                         <p>JetBrains WebStorm, Github, GitKraken, Npm, ESLint, Vercel, WSL2, JetBrains Toolbox</p>
                     </Card>
                     <Card>
-                        <p className="text-lg font-bold tracking-tight text-gray-200">Terminal-Based Text Editor</p>
-                        <p className="mb-2">A simple text editor written in C++</p>
+                        <ExternalLink color="white" width={20} height={20}>Yozakura</ExternalLink>
+                        <p className="mb-2">A dark Visual Studio Code theme inspired by the beauty of cherry blossoms at
+                            night</p>
                         <p className="text-sm text-[#7e8591]">Languages</p>
-                        <p className="mb-0.5">C++</p>
+                        <p className="mb-0.5">JSON</p>
                         <p className="text-sm text-[#7e8591]">Tools</p>
-                        <p className="mb-0.5">FTXUI</p>
-                        <p className="text-sm text-[#7e8591]">Developer Tools</p>
-                        <p>JetBrains CLion, Github, GitKraken, Make, CMake, G++, WSL2, JetBrains Toolbox</p>
+                        <p className="mb-0.5">Theme Studio, Visual Studio Code, yeoman, vsce, Azure DevOps</p>
                     </Card>
                     <Card>
                         <p className="text-lg font-bold tracking-tight text-gray-200">Unpublished Research Paper</p>
