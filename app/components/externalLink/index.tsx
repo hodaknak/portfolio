@@ -2,13 +2,20 @@ import React from "react"
 
 import styles from "./index.module.css";
 
-export default function ExternalLink({color, width, height, children}: {color: string, width: number, height: number, children: Readonly<React.ReactNode>}) {
+export default function ExternalLink({className, color, width, height, link, children}: {
+    className?: string,
+    color: string,
+    width: number,
+    height: number,
+    link: string,
+    children: Readonly<React.ReactNode>
+}) {
     return (
-        <div className={`flex flex-row justify-start items-center ${styles.externalLink}`}>
-            <div className="text-lg font-bold tracking-tight text-gray-200"><a
-                href="https://marketplace.visualstudio.com/items?itemName=hodakan.yozakura" target="_blank">
-                {children}
-            </a>
+        <div className={`flex flex-row justify-start items-center w-fit ${styles.externalLink}`}>
+            <div className={className}>
+                <a href={link} target="_blank">
+                    {children}
+                </a>
             </div>
             <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height}
                  viewBox="0 0 20 20" fill={color}>

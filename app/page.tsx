@@ -14,7 +14,7 @@ export default function Home() {
     return (
         <>
             <div
-                className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+                className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
                 <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
                     <div className="w-full text-center mb-28">
                         <p className="text-6xl text-gray-300 tracking-tight">
@@ -27,7 +27,7 @@ export default function Home() {
                     <Cards/>
 
                     <div className="w-full text-center mt-24">
-                        <p className="text-4xl text-gray-400">
+                        <p className="text-4xl">
                             My Toolbox
                         </p>
                     </div>
@@ -35,7 +35,7 @@ export default function Home() {
                     <Logos/>
 
                     <div className="w-full text-center mt-16">
-                        <p className="text-4xl text-gray-400">
+                        <p className="text-4xl">
                             Experience
                         </p>
                     </div>
@@ -43,7 +43,7 @@ export default function Home() {
                     <Experiences/>
 
                     <div className="w-full text-center mt-16">
-                        <p className="text-4xl text-gray-400">
+                        <p className="text-4xl">
                             Relevant Coursework
                         </p>
                     </div>

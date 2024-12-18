@@ -26,9 +26,9 @@ export default function RootLayout({
             <Icon width={60} height={60}/>
           </Link>
         </div>
-        <ul className="hidden md:flex gap-x-6 text-gray-200">
+        <ul className="flex gap-x-6 text-gray-200">
           <li>
-            <Link href="/">
+            <Link href="/" className="hidden md:block">
               <p className="link-underline">Home</p>
             </Link>
           </li>

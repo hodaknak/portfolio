@@ -14,16 +14,18 @@ body {
   font-family: "Helvetica", serif;
 }
 
-.link-underline {
-  border-bottom-width: 0;
-  background-image: linear-gradient(to right, transparent, transparent), linear-gradient(to right, #2e34ff, #a1a1ff);
-  background-size: 0 5px;
-  background-position: 0 100%;
-  background-repeat: no-repeat;
-  transition: background-size .2s ease-in-out;
-}
+@media (min-width: 768px) {
+  .link-underline {
+    border-bottom-width: 0;
+    background-image: linear-gradient(to right, transparent, transparent), linear-gradient(to right, #2e34ff, #a1a1ff);
+    background-size: 0 5px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size .2s ease-in-out;
+  }
 
-.link-underline:hover {
-  background-size: 100% 5px;
-  background-position: 0 100%
+  .link-underline:hover {
+    background-size: 100% 5px;
+    background-position: 0 100%
+  }
 }

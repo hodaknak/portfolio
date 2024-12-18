@@ -42,17 +42,20 @@ export default function Experiences() {
                         <p>JetBrains WebStorm, Github, GitKraken, Npm, ESLint, Vercel, WSL2, JetBrains Toolbox</p>
                     </Card>
                     <Card>
-                        <ExternalLink color="white" width={20} height={20}>Yozakura</ExternalLink>
+                        <ExternalLink className="text-lg font-bold tracking-tight text-gray-200" color="rgb(229 231 235)"
+                                      width={20} height={20}
+                                      link="https://marketplace.visualstudio.com/items?itemName=hodakan.yozakura">Yozakura</ExternalLink>
                         <p className="mb-2">A dark Visual Studio Code theme inspired by the beauty of cherry blossoms at
                             night</p>
                         <p className="text-sm text-[#7e8591]">Languages</p>
                         <p className="mb-0.5">JSON</p>
                         <p className="text-sm text-[#7e8591]">Tools</p>
-                        <p className="mb-0.5">Theme Studio, Visual Studio Code, yeoman, vsce, Azure DevOps</p>
+                        <p className="mb-0.5">Theme Studio, Visual Studio Code, Yeoman, Vsce, Azure DevOps</p>
                     </Card>
                     <Card>
                         <p className="text-lg font-bold tracking-tight text-gray-200">Unpublished Research Paper</p>
-                        <p className="mb-2">A time-series forecasting model using LSTMs to predict sunspots for space weather forecasting</p>
+                        <p className="mb-2">A time-series forecasting model using LSTMs to predict sunspots for space
+                            weather forecasting</p>
                         <p className="text-sm text-[#7e8591]">Languages</p>
                         <p className="mb-0.5">Python</p>
                         <p className="text-sm text-[#7e8591]">Tools</p>
@@ -66,9 +69,11 @@ export default function Experiences() {
     )
 }
 
-function Card({ children }: Readonly<{ children: React.ReactNode }>) {
+function Card({children}: Readonly<{ children: React.ReactNode }>) {
     return (
-        <div className="bg-[#474f69] shadow hover:bg-gray-700 rounded-lg w-3/4 m-auto border-2 mt-14 hover:scale-105 text-left" style={{transition: "all 1s ease"}}>
+        <div
+            className="bg-[#474f69] shadow hover:bg-gray-700 rounded-lg w-3/4 m-auto border-2 mt-14 hover:scale-105 text-left"
+            style={{transition: "all 1s ease"}}>
             <div className="block p-6">
                 {children}
             </div>
