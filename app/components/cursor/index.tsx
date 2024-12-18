@@ -8,10 +8,12 @@ const circleSize = 230;
 export default function Cursor() {
     const {mouseX, mouseY} = useMousePosition();
 
-    const [width, setWidth] = useState<number>(window.innerWidth);
+    const [width, setWidth] = useState(window.innerWidth);
+    const [height, setHeight] = useState(window.innerHeight);
 
     const handleWindowSizeChange = () => {
         setWidth(window.innerWidth);
+        setHeight(window.innerHeight);
     }
 
     useEffect(() => {
@@ -28,7 +30,10 @@ export default function Cursor() {
         <div className="fixed -z-30 blur-3xl" style={!isMobile ? {
             top: mouseY - circleSize,
             left: mouseX - circleSize
-        } : {top: window.innerHeight / 2 - circleSize, left: window.innerWidth / 2 - circleSize}}>
+        } : {
+            top: width / 2 - circleSize,
+            left: height / 2 - circleSize
+        }}>
             <svg height={circleSize * 2} width={circleSize * 2} xmlns="http://www.w3.org/2000/svg">
                 <circle r={circleSize} cx={circleSize} cy={circleSize} fill="#1f1f40"/>
             </svg>
