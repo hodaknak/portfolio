@@ -8,8 +8,8 @@ const circleSize = 230;
 export default function Cursor() {
     const {mouseX, mouseY} = useMousePosition();
 
-    const [width, setWidth] = useState(window.innerWidth);
-    const [height, setHeight] = useState(window.innerHeight);
+    const [width, setWidth] = useState(0);
+    const [height, setHeight] = useState(0);
 
     const handleWindowSizeChange = () => {
         setWidth(window.innerWidth);
@@ -17,6 +17,9 @@ export default function Cursor() {
     }
 
     useEffect(() => {
+        setWidth(window.innerWidth);
+        setHeight(window.innerHeight);
+
         window.addEventListener('resize', handleWindowSizeChange);
 
         return () => {
