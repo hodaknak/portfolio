@@ -10,11 +10,10 @@ import CourseWork from "./components/courseWork"
 import React from "react";
 
 export default function Home() {
-
     return (
         <>
             <div
-                className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
+                className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 overflow-hidden">
                 <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
                     <div className="w-full text-center mb-28">
                         <p className="text-6xl text-gray-300 tracking-tight">
@@ -22,7 +21,7 @@ export default function Home() {
                         </p>
                     </div>
 
-                    <Atom width={1000} height={1000}/>
+                    <Atom size={1000}/>
 
                     <Cards/>
 
@@ -49,14 +48,15 @@ export default function Home() {
                     </div>
                     <div className="m-auto">
                         <Image src="/education/uci.png" width="60" height="60" alt=""/>
-                        <svg className="mt-2 m-auto blur-[2px]" xmlns="http://www.w3.org/2000/svg" width="50" height="10">
+                        <svg className="mt-2 m-auto blur-[2px]" xmlns="http://www.w3.org/2000/svg" width="50"
+                             height="10">
                             <ellipse fill="rgb(156 163 175)" rx="25" ry="5" cx="25" cy="5"/>
                         </svg>
                     </div>
 
                     <CourseWork/>
                 </main>
-                <footer className="row-start-4 text-gray-500">
+                <footer className="row-start-4 text-gray-500 text-center">
                     <p>Built by Hodaka Nakamura with
                         <a className="text-gray-400 hover:text-blue-500" href="https://nextjs.org/"
                            target="_blank"> Next.js</a> and

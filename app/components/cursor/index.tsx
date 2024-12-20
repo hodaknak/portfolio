@@ -27,15 +27,14 @@ export default function Cursor() {
         }
     }, []);
 
-    const isMobile = width <= 768;
 
     return (
-        <div className="fixed -z-30 blur-3xl" style={!isMobile ? {
+        <div className="fixed -z-30 blur-3xl" style={width > 768 ? {
             top: mouseY - circleSize,
             left: mouseX - circleSize
         } : {
-            top: width / 2 - circleSize,
-            left: height / 2 - circleSize
+            top: height / 2 - circleSize,
+            left: width / 2 - circleSize
         }}>
             <svg height={circleSize * 2} width={circleSize * 2} xmlns="http://www.w3.org/2000/svg">
                 <circle r={circleSize} cx={circleSize} cy={circleSize} fill="#1f1f40"/>

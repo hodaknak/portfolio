@@ -11,7 +11,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: "Helvetica", serif;
+  font-family: "Verdana", sans-serif;
 }
 
 @media (min-width: 768px) {

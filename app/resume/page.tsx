@@ -9,7 +9,7 @@ export default function Page() {
                 </p>
             </div>
             <object data="/hnresume.pdf" type="application/pdf" className="m-auto w-2/3 h-screen"/>
-            <footer className="row-start-5 text-gray-500">
+            <footer className="row-start-5 text-gray-500 text-center">
                 <p>Built by Hodaka Nakamura with
                     <a className="text-gray-400 hover:text-blue-500" href="https://nextjs.org/"
                        target="_blank"> Next.js</a> and

@@ -1,16 +1,15 @@
 "use client";
 
 import React, {useRef, useEffect} from "react"
-import { Electron } from "./electron"
+import {Electron} from "./electron"
 
 import styles from "./index.module.css"
 
 const elecs: Electron[] = [];
 const radius: number[] = [150, 250, 350, 450];
 
-export default function Atom({width, height}: {width: number, height: number}) {
-    const centerX = width / 2;
-    const centerY = height / 2;
+export default function Atom({size}: { size: number }) {
+    const center = size / 2;
 
     const canvasRef = useRef(null);
 
@@ -28,26 +27,26 @@ export default function Atom({width, height}: {width: number, height: number}) {
             const delta = newCurrent - current;
             current = newCurrent;
 
-            draw(context, delta, centerX, centerY);
+            draw(context, delta, center, center);
             animationFrameId = window.requestAnimationFrame(render);
         }
 
         const makeElectrons = () => {
             elecs.length = 0;
 
-            elecs.push(new Electron(centerX, centerY, radius[0], 0.0005, 0));
-            elecs.push(new Electron(centerX, centerY, radius[0], 0.0005, Math.PI));
+            elecs.push(new Electron(center, center, radius[0], 0.0005, 0));
+            elecs.push(new Electron(center, center, radius[0], 0.0005, Math.PI));
 
             for (let i = 0; i < 9; i++) {
-                elecs.push(new Electron(centerX, centerY, radius[1], 0.00025, Math.PI * 2 * i / 9));
+                elecs.push(new Electron(center, center, radius[1], 0.00025, Math.PI * 2 * i / 9));
             }
 
             for (let i = 0; i < 18; i++) {
-                elecs.push(new Electron(centerX, centerY, radius[2], 0.0004, Math.PI * 2 * i / 18));
+                elecs.push(new Electron(center, center, radius[2], 0.0004, Math.PI * 2 * i / 18));
             }
 
             for (let i = 0; i < 3; i++) {
-                elecs.push(new Electron(centerX, centerY, radius[3], 0.0003, Math.PI * 2 * i / 3));
+                elecs.push(new Electron(center, center, radius[3], 0.0003, Math.PI * 2 * i / 3));
             }
         }
 
@@ -58,15 +57,13 @@ export default function Atom({width, height}: {width: number, height: number}) {
         return () => {
             window.cancelAnimationFrame(animationFrameId)
         }
-    }, [centerX, centerY])
+    }, [center])
 
 
     return (
-        <>
-            <div className="w-full absolute left-0 right-0 overflow-hidden" style={{top: -18}}>
-                <canvas className={`m-auto ${styles.atom}`} ref={canvasRef} width={width} height={height}></canvas>
-            </div>
-        </>
+        <div className="w-full absolute left-0 right-0 overflow-hiddezn" style={{top: -18}}>
+            <canvas className={`m-auto w-full ${styles.atom}`} style={{maxWidth: size}} ref={canvasRef} width={size} height={size}></canvas>
+        </div>
     );
 }
 

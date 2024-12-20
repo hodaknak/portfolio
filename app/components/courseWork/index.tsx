@@ -5,7 +5,7 @@ export default function CourseWork() {
     return (
         <div className="w-2/3 m-auto">
             <Card>
-                <div className="text-xl tracking-tight text-gray-200 flex justify-between w-full">
+                <div className="text-xl tracking-tight text-gray-200 flex flex-wrap justify-between w-full">
                     <div>I&C SCI H32: Python Programming and Libraries (Accelerated)</div>
                     <div>Grade: A</div>
                 </div>
@@ -18,7 +18,7 @@ export default function CourseWork() {
             </Card>
             <Card>
                 <div className="text-xl tracking-tight text-gray-200">
-                    <div className="text-xl tracking-tight text-gray-200 flex justify-between w-full">
+                    <div className="text-xl tracking-tight text-gray-200 flex flex-wrap justify-between w-full">
                         <div>I&C SCI 6B: Boolean Logic and Discrete Structures</div>
                         <div>Grade: A+</div>
                     </div>
@@ -28,7 +28,7 @@ export default function CourseWork() {
                     state machines, and turing machines.</p>
             </Card>
             <Card>
-                <div className="text-xl tracking-tight text-gray-200 flex justify-between w-full">
+                <div className="text-xl tracking-tight text-gray-200 flex flex-wrap justify-between w-full">
                     <div>I&C SCI 45C: Programming in C/C++ as a Second Language</div>
                     <div>Grade: A</div>
                 </div>
