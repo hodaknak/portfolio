@@ -1,11 +1,11 @@
 import Image from "next/image";
 
-import Cards from "./components/cards"
-import Logos from "./components/toolsLogos"
-import Atom from "./components/atom"
-import Experiences from "./components/experiences"
-import Cursor from "./components/cursor"
-import CourseWork from "./components/courseWork"
+import Cards from "./components/cards";
+import Logos from "./components/toolsLogos";
+import Atom from "./components/atom";
+import Experiences from "./components/experiences";
+import Cursor from "./components/cursor";
+import CourseWork from "./components/courseWork";
 
 import React from "react";
 
