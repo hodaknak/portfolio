@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-import Navbar from "./components/navbar";
-import Icon from "./components/icon";
+import Navbar from "@/components/navbar";
+import Icon from "@/components/icon";
 
 import Link from "next/link";
 import React from "react";

@@ -1,5 +1,5 @@
 import React from "react";
-import ExternalLink from "@/app/components/externalLink";
+import ExternalLink from "@/components/externalLink";
 
 export default function CourseWork() {
     return (
