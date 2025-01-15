@@ -2,7 +2,7 @@
     transition: all 1s ease;
     width: 30%;
     min-width: 23.5rem;
-    height: 19rem;
+    min-height: 19rem;
     border-radius: 0.5rem;
     background-color: rgba(71, 79, 105, 0.9);
     /*border-color: rgb(167 243 208);*/

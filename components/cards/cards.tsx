@@ -6,7 +6,7 @@ import styles from "./cards.module.css";
 export default function Cards() {
     return (
         <>
-            <div className="w-full flex flex-wrap gap-4 items-center justify-center flex-col sm:flex-row">
+            <div className="w-full flex flex-wrap gap-4 justify-center items-stretch flex-col sm:flex-row">
                 <div className={`${styles.card} shadow hover:bg-gray-700`}>
                     <div className="block p-6">
                         <p className="mb-2 text-2xl font-bold tracking-tight text-gray-200">Education</p>

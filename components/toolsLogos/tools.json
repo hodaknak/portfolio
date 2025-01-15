@@ -1,0 +1,66 @@
+[
+  {
+    "name": "Unreal Engine 5",
+    "filePath": "tools/unreal.svg"
+  },
+  {
+    "name": "Unity",
+    "filePath": "tools/unity.svg"
+  },
+  {
+    "name": "Tensorflow",
+    "filePath": "tools/tensorflow.svg"
+  },
+  {
+    "name": "Next.js",
+    "filePath": "tools/next.svg"
+  },
+  {
+    "name": "Node.js",
+    "filePath": "tools/node.svg"
+  },
+  {
+    "name": "P5.js",
+    "filePath": "tools/p5js.svg"
+  },
+  {
+    "name": "Github",
+    "filePath": "socials/github.svg"
+  },
+  {
+    "name": "Gitkraken",
+    "filePath": "tools/gitkraken.svg"
+  },
+  {
+    "name": "Socket.io",
+    "filePath": "tools/socketio.svg"
+  },
+  {
+    "name": "SQLite",
+    "filePath": "tools/sqlite.svg"
+  },
+  {
+    "name": "Visual Studio Code",
+    "filePath": "tools/vscode.svg"
+  },
+  {
+    "name": "Openframeworks",
+    "filePath": "tools/openframeworks.svg"
+  },
+  {
+    "name": "C++",
+    "filePath": "tools/cpp.svg"
+  },
+  {
+    "name": "JavaScript",
+    "filePath": "tools/javascript.svg"
+  },
+  {
+    "name": "Python",
+    "filePath": "tools/python.svg"
+  },
+  {
+    "name": "C#",
+    "filePath": "tools/csharp.svg"
+  }
+]

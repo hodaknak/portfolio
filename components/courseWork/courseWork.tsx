@@ -6,6 +6,18 @@ export default function CourseWork() {
         <div className="w-2/3 m-auto">
             <Card>
                 <div className="text-xl tracking-tight text-gray-200 flex flex-wrap justify-between w-full">
+                    <div>I&C SCI 33: Intermediate Programming</div>
+                    <div>Grade: N/A</div>
+                </div>
+                <p className="text-sm">Professor Thornton</p>
+                <ExternalLink className="text-sm" color="rgb(156 163 175)" width={17} height={17}
+                              link="https://ics.uci.edu/~thornton/ics33/">Course Page</ExternalLink>
+                <p className="mt-1.5"> Functional programming, name spaces, modules, class protocols, inheritance,
+                    iterators, generators, operator overloading, reflection, analysis of time and space efficiency, and
+                    more.</p>
+            </Card>
+            <Card>
+                <div className="text-xl tracking-tight text-gray-200 flex flex-wrap justify-between w-full">
                     <div>I&C SCI H32: Python Programming and Libraries (Accelerated)</div>
                     <div>Grade: A</div>
                 </div>
