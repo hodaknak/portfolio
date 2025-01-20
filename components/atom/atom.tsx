@@ -61,7 +61,7 @@ export default function Atom({size}: { size: number }) {
 
 
     return (
-        <div className="w-full absolute left-0 right-0 overflow-hiddezn" style={{top: -18}}>
+        <div className="w-full absolute left-0 right-0 overflow-hidden" style={{top: -18}}>
             <canvas className={`m-auto w-full ${styles.atom}`} style={{maxWidth: size}} ref={canvasRef} width={size} height={size}></canvas>
         </div>
     );

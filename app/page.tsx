@@ -13,7 +13,7 @@ export default function Home() {
     return (
         <>
             <div
-                className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 overflow-hidden">
+                className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 gap-16 sm:p-20 sm:pb-10 overflow-hidden">
                 <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
                     <div className="w-full text-center mb-28">
                         <p className="text-6xl text-gray-300 tracking-tight">
@@ -56,7 +56,7 @@ export default function Home() {
 
                     <CourseWork/>
                 </main>
-                <footer className="row-start-4 text-gray-500 text-center">
+                <footer className="text-sm row-start-4 text-gray-500 text-center">
                     <p>Built by Hodaka Nakamura with
                         <a className="text-gray-400 hover:text-blue-500" href="https://nextjs.org/"
                            target="_blank"> Next.js</a> and
