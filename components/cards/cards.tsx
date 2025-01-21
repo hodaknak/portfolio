@@ -7,7 +7,7 @@ export default function Cards() {
     return (
         <>
             <div className="w-full flex flex-wrap gap-4 justify-center items-stretch flex-col sm:flex-row">
-                <div className={`${styles.card} shadow hover:bg-gray-700`}>
+                <div className={`${styles.card} sm:w-[30%] shadow hover:bg-gray-700`}>
                     <div className="block p-6">
                         <p className="mb-2 text-2xl font-bold tracking-tight text-gray-200">Education</p>
                         <div className="flex flex-row items-start gap-6">
@@ -30,7 +30,7 @@ export default function Cards() {
                         </div>
                     </div>
                 </div>
-                <div className={`${styles.card} shadow hover:bg-gray-700`}>
+                <div className={`${styles.card} sm:w-[30%] shadow hover:bg-gray-700`}>
                     <div className="block p-6">
                         <p className="mb-2 text-2xl font-bold tracking-tight text-gray-200">About Me</p>
                         <div className="font-normal">
@@ -48,7 +48,7 @@ export default function Cards() {
                         </div>
                     </div>
                 </div>
-                <div className={`${styles.card} shadow hover:bg-gray-700`}>
+                <div className={`${styles.card} sm:w-[30%] shadow hover:bg-gray-700`}>
                     <div className="block p-6">
                         <p className="mb-2 text-2xl font-bold tracking-tight text-gray-200 ">Connect With Me</p>
                         <div className="flex flex-row items-start gap-6">

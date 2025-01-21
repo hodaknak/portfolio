@@ -1,6 +1,5 @@
 .card {
     transition: all 1s ease;
-    width: 30%;
     min-width: 23.5rem;
     min-height: 19rem;
     border-radius: 0.5rem;
