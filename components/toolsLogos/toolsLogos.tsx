@@ -37,7 +37,7 @@ export default function Logos() {
 
     return (
         <div className="w-full">
-            <div className="grid grid-cols-4 m-auto justify-between gap-14" style={{width: "424px"}}>
+            <div className="grid grid-cols-6 m-auto justify-items-center justify-between gap-3 sm:gap-10 w-2/3">
                 {tools.map((tools, index) =>
                     <Image src={tools.filePath} width="50" height="50" alt="" key={index} className={`${styles.logo}`} style={active == index ? {transform: "scale(1.5)"} : {}}/>
                 )}

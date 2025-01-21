@@ -1,66 +1,98 @@
 [
   {
     "name": "Unreal Engine 5",
-    "filePath": "tools/unreal.svg"
+    "filePath": "/tools/unreal.svg"
   },
   {
     "name": "Unity",
-    "filePath": "tools/unity.svg"
+    "filePath": "/tools/unity.svg"
   },
   {
     "name": "Tensorflow",
-    "filePath": "tools/tensorflow.svg"
+    "filePath": "/tools/tensorflow.svg"
+  },
+  {
+    "name": "NumPy",
+    "filePath": "/tools/numpy.png"
+  },
+  {
+    "name": "Pandas",
+    "filePath": "/tools/pandas.svg"
+  },
+  {
+    "name": "Jupyter",
+    "filePath": "/tools/jupyter.svg"
+  },
+  {
+    "name": "React/React Native",
+    "filePath": "/tools/react.svg"
+  },
+  {
+    "name": "Vite",
+    "filePath": "/tools/vite.svg"
   },
   {
     "name": "Next.js",
-    "filePath": "tools/next.svg"
+    "filePath": "/tools/next.svg"
+  },
+  {
+    "name": "jQuery",
+    "filePath": "/tools/jquery.svg"
   },
   {
     "name": "Node.js",
-    "filePath": "tools/node.svg"
+    "filePath": "/tools/node.svg"
   },
   {
-    "name": "P5.js",
-    "filePath": "tools/p5js.svg"
-  },
-  {
-    "name": "Github",
-    "filePath": "socials/github.svg"
-  },
-  {
-    "name": "Gitkraken",
-    "filePath": "tools/gitkraken.svg"
+    "name": "Express.js",
+    "filePath": "/tools/express.svg"
   },
   {
     "name": "Socket.io",
-    "filePath": "tools/socketio.svg"
+    "filePath": "/tools/socketio.svg"
   },
   {
     "name": "SQLite",
-    "filePath": "tools/sqlite.svg"
+    "filePath": "/tools/sqlite.svg"
+  },
+  {
+    "name": "JetBrains IDEs",
+    "filePath": "/tools/jetbrains.svg"
   },
   {
     "name": "Visual Studio Code",
-    "filePath": "tools/vscode.svg"
+    "filePath": "/tools/vscode.svg"
   },
   {
-    "name": "Openframeworks",
-    "filePath": "tools/openframeworks.svg"
+    "name": "Github",
+    "filePath": "/socials/github.svg"
+  },
+  {
+    "name": "Gitkraken",
+    "filePath": "/tools/gitkraken.svg"
+  },
+  {
+    "name": "CMake",
+    "filePath": "/tools/cmake.svg"
   },
   {
     "name": "C++",
-    "filePath": "tools/cpp.svg"
+    "filePath": "/tools/cpp.svg"
   },
   {
     "name": "JavaScript",
-    "filePath": "tools/javascript.svg"
+    "filePath": "/tools/javascript.svg"
   },
   {
     "name": "Python",
-    "filePath": "tools/python.svg"
+    "filePath": "/tools/python.svg"
   },
   {
     "name": "C#",
-    "filePath": "tools/csharp.svg"
+    "filePath": "/tools/csharp.svg"
+  },
+  {
+    "name": "PHP",
+    "filePath": "/tools/php.svg"
   }
 ]
