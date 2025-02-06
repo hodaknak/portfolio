@@ -1,5 +1,6 @@
 import React from "react";
 import ExternalLink from "../externalLink";
+import Image from "next/image";
 
 export default function Experiences() {
     return (
@@ -8,8 +9,22 @@ export default function Experiences() {
                 <div className="min-w-[400px] w-1/2 m-auto mt-6">
                     <p className="text-2xl">Work Experiences</p>
                     <Card>
+                        <Image className="absolute top-0 right-0" width={70} height={70} src="/experience/ardent.png" alt="Ardent"/>
+                        <p className="text-lg font-bold tracking-tight text-gray-200">Ardent Academy</p>
+                        <p className="mb-2 text-[#7e8591]">Tutor (2024-Present)</p>
+                        <p className="mb-2">Helping K-12 children with STEM subjects, designing personalized curriculums
+                            and adapting to student&#39;s needs</p>
+                        <p className="text-sm text-[#7e8591]">Topics</p>
+                        <p className="mb-0.5">Python, Java, JavaScript, C++, and other STEM subjects</p>
+                        <p className="text-sm text-[#7e8591]">Tools</p>
+                        <p className="mb-0.5">Replit, Microsoft Teams, TutorBird, GroupMe</p>
+                    </Card>
+                    <Card>
+                        <Image className="absolute top-4 right-4" width={50} height={50} src="/experience/hakoniwa.png" alt="Hakoniwa"/>
                         <p className="text-lg font-bold tracking-tight text-gray-200">TOPPERS Hakoniwa WG</p>
-                        <p className="mb-2">Software Engineering Intern (2023-2024)</p>
+                        <p className="mb-2 text-[#7e8591]">Software Engineering Intern (2023-2024)</p>
+                        <p className="mb-2">Help develop virtual environment for embedded systems and IoT, introducing
+                            audio streaming and working with signal processing</p>
                         <p className="text-sm text-[#7e8591]">Languages</p>
                         <p className="mb-0.5">C#, Python</p>
                         <p className="text-sm text-[#7e8591]">Tools</p>
@@ -18,9 +33,22 @@ export default function Experiences() {
                         <p>JetBrains Rider, Visual Studio, Jupyter/Google Colab, Docker, WSL2</p>
                     </Card>
                     <Card>
+                        <Image className="absolute top-4 right-4" width={50} height={50} src="/experience/mathnasium.png" alt="Mathnasium"/>
+                        <p className="text-lg font-bold tracking-tight text-gray-200">Mathnasium Learning Center</p>
+                        <p className="mb-2 text-[#7e8591]">Math Tutor (2023-2024)</p>
+                        <p className="mb-2">Taught children K-12 alongside multiple tutors with mathematics up to
+                            calculus</p>
+                        <p className="text-sm text-[#7e8591]">Topics</p>
+                        <p className="mb-0.5">K-12 Math</p>
+                    </Card>
+                    <Card>
+                        <Image className="absolute top-4 right-4" width={50} height={50} src="/experience/psu.png" alt="PSU"/>
                         <p className="text-lg font-bold tracking-tight text-gray-200">Portland State University
                             Fariborz Maseeh Department of Mathematics + Statistics</p>
-                        <p className="mb-2">Part-time Fullstack Web Developer (2021-2022)</p>
+                        <p className="mb-2 text-[#7e8591]">Part-time Fullstack Web Developer (2021-2022)</p>
+                        <p>Developed feature for math instructors to create customized courses</p>
+                        <ExternalLink className="mb-2" color="rgb(156 163 175)" width={20} height={20}
+                                      link="https://taafu.org/">Link</ExternalLink>
                         <p className="text-sm text-[#7e8591]">Languages</p>
                         <p className="mb-0.5">HTML, CSS, JavaScript, PHP, SQL</p>
                         <p className="text-sm text-[#7e8591]">Tools</p>
@@ -42,7 +70,8 @@ export default function Experiences() {
                         <p>JetBrains WebStorm, Github, GitKraken, Npm, ESLint, Vercel, WSL2, JetBrains Toolbox</p>
                     </Card>
                     <Card>
-                        <ExternalLink className="text-lg font-bold tracking-tight text-gray-200" color="rgb(229 231 235)"
+                        <ExternalLink className="text-lg font-bold tracking-tight text-gray-200"
+                                      color="rgb(229 231 235)"
                                       width={20} height={20}
                                       link="https://marketplace.visualstudio.com/items?itemName=hodakan.yozakura">Yozakura</ExternalLink>
                         <p className="mb-2">A dark Visual Studio Code theme inspired by the beauty of cherry blossoms at
@@ -74,7 +103,7 @@ function Card({children}: Readonly<{ children: React.ReactNode }>) {
         <div
             className="bg-[#474f69] shadow hover:bg-gray-700 rounded-lg w-3/4 m-auto border-2 mt-14 hover:scale-105 text-left"
             style={{transition: "all 1s ease"}}>
-            <div className="block p-6">
+            <div className="block p-6 relative">
                 {children}
             </div>
         </div>

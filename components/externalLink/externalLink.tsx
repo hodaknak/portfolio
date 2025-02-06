@@ -11,8 +11,8 @@ export default function ExternalLink({className, color, width, height, link, chi
     children: Readonly<React.ReactNode>
 }) {
     return (
-        <div className={`flex flex-row justify-start items-center w-fit ${styles.externalLink}`}>
-            <div className={className}>
+        <div className={`flex flex-row justify-start items-center w-fit ${styles.externalLink} ${className}`}>
+            <div>
                 <a href={link} target="_blank">
                     {children}
                 </a>

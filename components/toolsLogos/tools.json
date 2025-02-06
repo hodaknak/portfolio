@@ -8,8 +8,16 @@
     "filePath": "/tools/unity.svg"
   },
   {
+    "name": "Blender",
+    "filePath": "/tools/blender.svg"
+  },
+  {
     "name": "Tensorflow",
     "filePath": "/tools/tensorflow.svg"
+  },
+  {
+    "name": "PyTorch",
+    "filePath": "/tools/pytorch.svg"
   },
   {
     "name": "NumPy",
@@ -74,6 +82,14 @@
   {
     "name": "CMake",
     "filePath": "/tools/cmake.svg"
+  },
+  {
+    "name": "Bash",
+    "filePath": "/tools/bash.svg"
+  },
+  {
+    "name": "C",
+    "filePath": "/tools/c.svg"
   },
   {
     "name": "C++",
