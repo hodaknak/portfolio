@@ -9,9 +9,9 @@ export default function Experiences() {
                 <div className="min-w-[400px] w-1/2 m-auto mt-6">
                     <p className="text-2xl">Work Experiences</p>
                     <Card>
-                        <Image className="absolute top-0 right-0" width={70} height={70} src="/experience/ardent.png" alt="Ardent"/>
+                        <Image className="absolute top-4 right-4" width={50} height={50} src="/experience/ardent.png" alt="Ardent"/>
                         <p className="text-lg font-bold tracking-tight text-gray-200">Ardent Academy</p>
-                        <p className="mb-2 text-[#7e8591]">Tutor (2024-Present)</p>
+                        <p className="mb-2 text-[#7e8591]">Tutor (2025-Present)</p>
                         <p className="mb-2">Helping K-12 children with STEM subjects, designing personalized curriculums
                             and adapting to student&#39;s needs</p>
                         <p className="text-sm text-[#7e8591]">Topics</p>
