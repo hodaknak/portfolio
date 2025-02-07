@@ -10,7 +10,7 @@ export default function Experiences() {
                     <p className="text-2xl">Work Experiences</p>
                     <Card>
                         <Image className="absolute top-4 right-4" width={50} height={50} src="/experience/ardent.png" alt="Ardent"/>
-                        <p className="text-lg font-bold tracking-tight text-gray-200">Ardent Academy</p>
+                        <p className="w-[calc(100%-50px)] text-lg font-bold tracking-tight text-gray-200">Ardent Academy</p>
                         <p className="mb-2 text-[#7e8591]">Tutor (2025-Present)</p>
                         <p className="mb-2">Helping K-12 children with STEM subjects, designing personalized curriculums
                             and adapting to student&#39;s needs</p>
@@ -21,7 +21,7 @@ export default function Experiences() {
                     </Card>
                     <Card>
                         <Image className="absolute top-4 right-4" width={50} height={50} src="/experience/hakoniwa.png" alt="Hakoniwa"/>
-                        <p className="text-lg font-bold tracking-tight text-gray-200">TOPPERS Hakoniwa WG</p>
+                        <p className="w-[calc(100%-50px)] text-lg font-bold tracking-tight text-gray-200">TOPPERS Hakoniwa WG</p>
                         <p className="mb-2 text-[#7e8591]">Software Engineering Intern (2023-2024)</p>
                         <p className="mb-2">Help develop virtual environment for embedded systems and IoT, introducing
                             audio streaming and working with signal processing</p>
@@ -34,7 +34,7 @@ export default function Experiences() {
                     </Card>
                     <Card>
                         <Image className="absolute top-4 right-4" width={50} height={50} src="/experience/mathnasium.png" alt="Mathnasium"/>
-                        <p className="text-lg font-bold tracking-tight text-gray-200">Mathnasium Learning Center</p>
+                        <p className="w-[calc(100%-50px)] text-lg font-bold tracking-tight text-gray-200">Mathnasium Learning Center</p>
                         <p className="mb-2 text-[#7e8591]">Math Tutor (2023-2024)</p>
                         <p className="mb-2">Taught children K-12 alongside multiple tutors with mathematics up to
                             calculus</p>
@@ -43,7 +43,7 @@ export default function Experiences() {
                     </Card>
                     <Card>
                         <Image className="absolute top-4 right-4" width={50} height={50} src="/experience/psu.png" alt="PSU"/>
-                        <p className="text-lg font-bold tracking-tight text-gray-200">Portland State University
+                        <p className="w-[calc(100%-50px)] text-lg font-bold tracking-tight text-gray-200">Portland State University
                             Fariborz Maseeh Department of Mathematics + Statistics</p>
                         <p className="mb-2 text-[#7e8591]">Part-time Fullstack Web Developer (2021-2022)</p>
                         <p>Developed feature for math instructors to create customized courses</p>
