@@ -15,7 +15,8 @@ export default function Cards() {
                             <div className="font-normal">
                                 <p>University of California, Irvine</p>
                                 <p className="text-sm">Irvine, CA</p>
-                                <p className="text-sm">B.S. Computer Science</p>
+                                <p className="text-sm">B.S. Computer Science 4.0 GPA</p>
+                                <p className="text-sm">Bioinformatics Minor</p>
                                 <p className="text-sm">Expected June 2028</p>
                             </div>
                         </div>
@@ -35,7 +36,7 @@ export default function Cards() {
                         <p className="mb-2 text-2xl font-bold tracking-tight text-gray-200">About Me</p>
                         <div className="font-normal">
                             <p>
-                                Hello! My name is Hodaka Nakamura and I am a first-year Computer Science major at UCI. I
+                                Hello! My name is Hodaka Nakamura and I am a first-year Computer Science major at UCI with a minor in bioinformatics. I
                                 hold a strong
                                 passion for programming, and have deeply explored many areas including machine learning,
                                 game
