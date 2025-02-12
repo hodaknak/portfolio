@@ -15,7 +15,8 @@ export default function Cards() {
                             <div className="font-normal">
                                 <p>University of California, Irvine</p>
                                 <p className="text-sm">Irvine, CA</p>
-                                <p className="text-sm">B.S. Computer Science 4.0 GPA</p>
+                                <p className="text-sm">GPA: 4.0</p>
+                                <p className="text-sm">B.S. Computer Science</p>
                                 <p className="text-sm">Bioinformatics Minor</p>
                                 <p className="text-sm">Expected June 2028</p>
                             </div>
@@ -25,7 +26,8 @@ export default function Cards() {
                             <div className="font-normal">
                                 <p>Ida B. Wells-Barnett High School</p>
                                 <p className="text-sm">Portland, OR</p>
-                                <p className="text-sm">High School Diploma 4.21 GPA</p>
+                                <p className="text-sm">GPA: 4.21</p>
+                                <p className="text-sm">High School Diploma</p>
                                 <p className="text-sm">Graduated June 2024</p>
                             </div>
                         </div>
