@@ -42,7 +42,7 @@ export default function Cards() {
                                 hold a strong
                                 passion for programming, and have deeply explored many areas including machine learning,
                                 game
-                                development, and web applications, using tools like Tensorflow, UE4, and React.
+                                development, and web applications, using tools like Tensorflow, UE5, and React.
                             </p>
                             <br/>
                             <p>
