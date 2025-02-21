@@ -20,13 +20,23 @@ export default function Experiences() {
                         <p className="mb-0.5">Replit, Microsoft Teams, TutorBird, GroupMe</p>
                     </Card>
                     <Card>
-                        <Image className="absolute top-4 right-4" width={50} height={50} src="/experience/branchout.png" alt="Branch Out"/>
+                        <Image className="absolute top-4 right-4" width={50} height={50} src="/experience/branchout.png"
+                               alt="Branch Out"/>
                         <p className="w-[calc(100%-50px)] text-lg font-bold tracking-tight text-gray-200">Branch Out</p>
                         <p className="mb-2 text-[#7e8591]">Ambassador Engineering Intern (2025-Present)</p>
+                        <p className="mb-2">Develop tests for backend system of the Branch Out application</p>
+                        <p className="text-sm text-[#7e8591]">Languages</p>
+                        <p className="mb-0.5">Python</p>
+                        <p className="text-sm text-[#7e8591]">Tools</p>
+                        <p className="mb-0.5">FastAPI, GraphQL, PostgreSQL, PyTest</p>
+                        <p className="text-sm text-[#7e8591]">Developer Tools</p>
+                        <p>Visual Studio Code, Poetry, Docker, GitLab</p>
                     </Card>
                     <Card>
-                        <Image className="absolute top-4 right-4" width={50} height={50} src="/experience/hakoniwa.png" alt="Hakoniwa"/>
-                        <p className="w-[calc(100%-50px)] text-lg font-bold tracking-tight text-gray-200">TOPPERS Hakoniwa WG</p>
+                        <Image className="absolute top-4 right-4" width={50} height={50} src="/experience/hakoniwa.png"
+                               alt="Hakoniwa"/>
+                        <p className="w-[calc(100%-50px)] text-lg font-bold tracking-tight text-gray-200">TOPPERS
+                            Hakoniwa WG</p>
                         <p className="mb-2 text-[#7e8591]">Software Engineering Intern (2023-2024)</p>
                         <p className="mb-2">Help develop virtual environment for embedded systems and IoT, introducing
                             audio streaming and working with signal processing</p>
