@@ -15,6 +15,7 @@ export default function Cards() {
                             <div className="font-normal">
                                 <p>University of California, Irvine</p>
                                 <p className="text-sm">Irvine, CA</p>
+                                <p className="text-sm mb-1">Campuswide Honors Collegium | Director&#39;s Scholar</p>
                                 <p className="text-sm">GPA: 4.0</p>
                                 <p className="text-sm">B.S. Computer Science</p>
                                 <p className="text-sm">Bioinformatics Minor</p>
@@ -25,7 +26,7 @@ export default function Cards() {
                             <Image src="/education/ibwhs.png" className="mt-1.5" width="40" height="40" alt=""/>
                             <div className="font-normal">
                                 <p>Ida B. Wells-Barnett High School</p>
-                                <p className="text-sm">Portland, OR</p>
+                                <p className="text-sm mb-1">Portland, OR</p>
                                 <p className="text-sm">GPA: 4.21</p>
                                 <p className="text-sm">High School Diploma</p>
                                 <p className="text-sm">Graduated June 2024</p>
