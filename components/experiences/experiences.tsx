@@ -20,6 +20,12 @@ export default function Experiences() {
                         <p className="mb-0.5">Replit, Microsoft Teams, TutorBird, GroupMe</p>
                     </Card>
                     <Card>
+                        <Image className="absolute top-4 right-4" width={50} height={50} src="/experience/JSA.png" alt="Ardent"/>
+                        <p className="w-[calc(100%-50px)] text-lg font-bold tracking-tight text-gray-200">Japanese Student Association</p>
+                        <p className="mb-2 text-[#7e8591]">Intern (2025-Present)</p>
+                        <p className="mb-2">Manage university&#39;s Japanese Student Association, coordinating club/career events and collaborating with other universities&#39; JSAs.</p>
+                    </Card>
+                    <Card>
                         <Image className="absolute top-4 right-4" width={50} height={50} src="/experience/branchout.png"
                                alt="Branch Out"/>
                         <p className="w-[calc(100%-50px)] text-lg font-bold tracking-tight text-gray-200">Branch Out</p>

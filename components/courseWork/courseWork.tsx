@@ -6,8 +6,34 @@ export default function CourseWork() {
         <div className="w-2/3 m-auto">
             <Card>
                 <div className="text-xl tracking-tight text-gray-200 flex flex-wrap justify-between w-full">
-                    <div>I&C SCI 33: Intermediate Programming</div>
+                    <div>I&C SCI 51: Introductory Computer Organization</div>
                     <div>Grade: N/A</div>
+                </div>
+                <p className="text-sm">Professor Nicolau</p>
+                <p className="mt-1.5"> Multilevel view, computer system, assembly programming, memory organization, and more.</p>
+            </Card>
+            <Card>
+                <div className="text-xl tracking-tight text-gray-200 flex flex-wrap justify-between w-full">
+                    <div>I&C SCI 80: Algorithmic Thinking</div>
+                    <div>Grade: N/A</div>
+                </div>
+                <p className="text-sm">Professor Shindler</p>
+                <p className="mt-1.5">Introduction to competitive programming and algorithmic thinking.</p>
+            </Card>
+            <Card>
+                <div className="text-xl tracking-tight text-gray-200">
+                    <div className="text-xl tracking-tight text-gray-200 flex flex-wrap justify-between w-full">
+                        <div>I&C SCI 6D: Discrete Mathematics for Computer Science</div>
+                        <div>Grade: N/A</div>
+                    </div>
+                </div>
+                <p className="text-sm">Professor Zhang</p>
+                <p className="mt-1.5">Discrete mathematics for computer science, abstracting computational problems and analyzing them mathematically. Mathematical induction, combinatorics, recurrence relations, and more.</p>
+            </Card>
+            <Card>
+                <div className="text-xl tracking-tight text-gray-200 flex flex-wrap justify-between w-full">
+                    <div>I&C SCI 33: Intermediate Programming</div>
+                    <div>Grade: A</div>
                 </div>
                 <p className="text-sm">Professor Thornton</p>
                 <ExternalLink className="text-sm" color="rgb(156 163 175)" width={17} height={17}
